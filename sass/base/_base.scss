@@ -5,10 +5,33 @@
     padding : 0;
     box-sizing: inherit;
 }
+
 html{
     //It is what 1 rem is
     font-size: 62.5%;
+
+    // @include respond(phone) {
+    //     font-size : 30%;
+    // }
+
+
+    @include respond(tab-land) {
+        font-size : 56.25%;
+    }
+
+    @include respond(tablet) {
+        font-size : 50%;
+    }
+
+    @include respond(big) {
+        font-size : 75%;
+    }
 }
+
 body {
     box-sizing: border-box;
+
+    @include respond(tablet) {
+        padding: 0;
+    }
 }

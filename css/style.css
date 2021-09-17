@@ -35,9 +35,21 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 1800px) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
+  @media (max-width: 900px) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Leto", sans-serif;
@@ -61,12 +73,19 @@ body {
     animation-timing-function: ease-out;
     /* animation-iteration-count: 3;
         animation-delay: 3s; */ }
+    @media (max-width: 600px) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: 1.7rem;
     animation: moveToLeft 2s ease-out; }
+    @media (max-width: 600px) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -77,6 +96,12 @@ body {
   color: transparent;
   letter-spacing: .1rem;
   transition: all 0.3s; }
+  @media (max-width: 600px) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 900px) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewX(2deg) skewY(5deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3); }
